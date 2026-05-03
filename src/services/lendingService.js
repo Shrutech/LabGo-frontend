@@ -1,4 +1,4 @@
-import axios from '../api/axiosConfig.js';
+import axiosInstance from '../api/axiosConfig.js';
 
 export const getLendingList = async (userId) => {
   const response = await axiosInstance.get(`/lending?userId=${userId}`);

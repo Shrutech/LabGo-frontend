@@ -1,4 +1,4 @@
-import axios from '../api/axiosConfig.js';
+import axiosInstance from '../api/axiosConfig.js';
 
 export const getEquipmentList = async (userId) => {
   const response = await axiosInstance.get(`/equipment?userId=${userId}`);
